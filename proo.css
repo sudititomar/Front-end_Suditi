@@ -1,0 +1,153 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: #2d3748;
+  padding: 20px 0;
+  color: #f7fafc;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #f7fafc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #63b3ed;
+}
+
+/* Main content */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-figure {
+  max-width: 100%;
+}
+
+.profile-img {
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  margin-top: 12px;
+  font-weight: 600;
+  font-style: italic;
+  color: #4a5568;
+}
+
+/* Intro Text */
+.intro-text {
+  margin-top: 30px;
+  max-width: 480px;
+  text-align: left;
+}
+
+/* Sections */
+.section {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  margin-bottom: 12px;
+  border-bottom: 2px solid #63b3ed;
+  padding-bottom: 6px;
+  font-weight: 700;
+  color: #2b6cb0;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #2d3748;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* Contact Section Links */
+.contact-section a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-section a:hover,
+.contact-section a:focus {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #718096;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .intro-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
